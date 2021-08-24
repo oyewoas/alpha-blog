@@ -11,10 +11,8 @@
   </head>
 
   <body>
-    <%# Display success message for articles saved %>
-    <% flash.each do |name, msg| %>
-      <%= msg %>
-    <% end %>
+    <%# Render Message Partials(starting with underscore) that display flash message for articles saved %>
+    <%= render 'layouts/messages' %>
     <%= yield %>
   </body>
 </html>
